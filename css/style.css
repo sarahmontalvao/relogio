@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(17, 0, 32);
+    overflow: hidden;
+}
+
+main{
+height: 100vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.relogio{
+    width: 600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(17, 0, 32, 0.6)  );
+    border-radius: 600px;
+    border: 8px double rgb(208, 255, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.numero{
+font-size: 4em;
+color:rgb(208, 255, 0);
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ text-align: center;
+ padding: 7px;
+
+}
+
+.numero1{
+    transform: rotate(30deg);}
+
+.numero2{
+    transform: rotate(60deg);}
+
+ .numero3{
+     transform: rotate(90deg);}
+
+.numero4{
+    transform: rotate(120deg);}
+
+ .numero5{
+     transform: rotate(150deg);}
+
+ .numero6{
+    transform: rotate(180deg);}
+
+ .numero7{
+     transform: rotate(210deg);}
+
+ .numero8{
+    transform: rotate(240deg);}
+
+ .numero9{
+    transform: rotate(270deg);}
+ .numero10{
+      transform: rotate(300deg);}
+
+ .numero11{
+     transform: rotate(330deg);}
+
+.numero12{
+    transform: rotate(360deg);}
+
+
+
+  .segundoponteiro{
+ width: 5px;
+ height: 230px;
+ background-color:  rgb(208, 255, 0);
+position: absolute;
+border-radius: 9px;
+transform: translate(0, -50%) ;
+transform-origin: bottom center;
+border: 1px solid rgba(128, 128, 128, 0.671);
+
+}                     
+
+.minutoponteiro{
+    width: 10px;
+    height: 210px;
+    background-color:rgb(208, 255, 0);
+   position: absolute;
+   border-radius: 9px;
+   transform: translate(0, -50%)  ;
+   transform-origin: bottom center;
+   border: 3px solid rgba(128, 128, 128, 0.671);
+}
+
+
+.horaponteiro{
+    width: 18px;
+    height: 130px;
+    background-color:  rgb(208, 255, 0);
+   position: absolute;
+   border-radius: 9px;
+   transform: translate(0, -50%) ;
+   transform-origin: bottom center;
+   border: 3px solid rgba(128, 128, 128, 0.671);
+}
+
+    .bola{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color:  rgb(208, 255, 0);
+    border: 3px solid rgba(128, 128, 128, 0.671);
+    z-index: 1;
+}
+
+#digital
+{
+    display: flex;
+    align-items: center;
+    color: white;
+
+
+}
+
+#horas, #min, #s{
+height: 150px;
+width: 120px;
+
+border-radius: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 4em;
+justify-content: space-around;
+}
+
+.divisao{
+font-size: 4em;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 3px;
+color: gray;
+}
