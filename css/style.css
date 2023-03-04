@@ -9,16 +9,18 @@ body{
     overflow: hidden;
 }
 
+
 main{
 height: 100vh;
 display: flex;
 justify-content: space-around;
 align-items: center;
+
 }
 
 .relogio{
-    width: 600px;
-    height: 600px;
+    width: 35rem;
+    height: 35rem;
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(17, 0, 32, 0.6)  );
     border-radius: 600px;
     border: 8px double rgb(208, 255, 0);
@@ -79,7 +81,7 @@ color:rgb(208, 255, 0);
 
   .segundoponteiro{
  width: 5px;
- height: 230px;
+ height: 15rem;
  background-color:  rgb(208, 255, 0);
 position: absolute;
 border-radius: 9px;
@@ -91,7 +93,7 @@ border: 1px solid rgba(128, 128, 128, 0.671);
 
 .minutoponteiro{
     width: 10px;
-    height: 210px;
+    height: 13rem;
     background-color:rgb(208, 255, 0);
    position: absolute;
    border-radius: 9px;
@@ -103,7 +105,7 @@ border: 1px solid rgba(128, 128, 128, 0.671);
 
 .horaponteiro{
     width: 18px;
-    height: 130px;
+    height: 7rem;
     background-color:  rgb(208, 255, 0);
    position: absolute;
    border-radius: 9px;
@@ -151,3 +153,96 @@ align-items: center;
 padding: 3px;
 color: gray;
 }
+
+
+@media (max-width:1000px){
+main{
+display: flex;
+flex-direction: column;
+}
+
+
+.relogio {
+width: 30rem;
+height: 30rem;
+
+}
+
+.horaponteiro{
+    height: 7rem;
+    width: 13px;
+    }
+    
+    .minutoponteiro{
+    height: 10rem;
+    width: 8px;
+    }
+    
+    .segundoponteiro{
+    height: 13rem;
+    width: 5px;
+    }
+
+
+.numero{
+font-size: 2.5em;
+}
+
+}
+
+@media (max-width:600px){
+main{
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+
+.relogio {
+    width: 24rem;
+    height: 24rem;
+    border: 0px;
+    }
+
+.numero{
+font-size: 2.5em;
+}
+
+#digital{
+font-size: 0.8em;
+}
+.horaponteiro{
+    height: 80px;
+    width: 13px;
+    }
+    
+    .minutoponteiro{
+    height: 130px;
+    width: 8px;
+    }
+    
+    .segundoponteiro{
+    height: 150px;
+    width: 5px;
+    }
+
+}
+
+@media (max-width:450px){
+   
+    
+    .relogio {
+        width: 20rem;
+        height: 20rem;
+        
+        }
+    
+    .numero{
+    font-size: 2em;
+    }
+    
+    #digital{
+    font-size: 0.6em;
+    }
+    
+    
+    }
