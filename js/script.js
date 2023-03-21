@@ -26,9 +26,26 @@ setInterval(() => {
     minutoponteiro.style.transform= ` translate(0, -50%) rotatez(${minutes * 6}deg) `;
     horaponteiro.style.transform= ` translate(0, -50%) rotatez(${hours * 30}deg) `;
 
-    horas.textContent = hours;
-    min.textContent = minutes;
-    s.textContent = seconds;
+         if (hours < 10) {
+        digitalhoras.textContent = '0' + hours;
+    } else {
+        digitalhoras.textContent = hours;
+      }
+
+        if (minutes < 10) {
+    digitalmin.textContent = '0' + minutes;
+    } else {
+    digitalmin.textContent = minutes;
+    }
+
+        if (seconds < 10) {
+    digitalseconds.textContent = '0' + seconds;
+    } else {
+    digitalseconds.textContent = seconds;
+    }
+
+
+
 
 }, 1000); 
 
